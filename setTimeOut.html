@@ -1,0 +1,16 @@
+<body>
+<h1 id="message">Welcome to Java Script</h1>
+<button onclick="delayMessage()">Click Here</button>
+<script>
+function showMessage()
+{
+var msg=document.getElementById("message");
+msg.innerHTML="Executed after 2 seconds";
+}
+function delayMessage()
+{
+setTimeout(showMessage,2000)
+}
+</script>
+</body>
+

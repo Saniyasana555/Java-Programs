@@ -1,0 +1,23 @@
+<body>
+Name:<input type="text" name="username"></br>
+Email-id:<input type="text" name="email"></br>
+Mobile<input type="text" name="mobile number"></br>
+<button onclick="displayValues()">display</button>
+<div id="output"></div>
+<script>
+function displayValues()
+{
+var username=document.getElementsByName("username")[0].value;
+var email=document.getElementsByName("email")[0].value;
+var mobile=document.getElementsByName("mobile number")[0].value;
+
+var a=document.getElementById("output");
+a.innerHTML=`
+<P>Username:${username}</p>
+<P>Email-id:${email}</p>
+<P>Mobile-No:${mobile}</p>`;
+}
+
+
+</script>
+</body>
